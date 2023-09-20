@@ -1,6 +1,4 @@
-import java.util.Scanner;
-
-public class Main {
+public class HW_1 {
     public static void main(String[] args) {
         //Scanner sc = new Scanner(System.in);
         int
@@ -19,7 +17,7 @@ public class Main {
             "Сдача > pounds: " + ((insert_pe - cost_pe) / 20 / 12)
                     + " shillings: " + ((insert_pe - cost_pe) / 20 % 12)
                     + " pennies: " + ((insert_pe - cost_pe) % 20)
-        :
+                :
             cost_pe > insert_pe ? "> Ошибка!!!" : "> Сдачи нет!!!");
     }
 }
