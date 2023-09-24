@@ -11,20 +11,36 @@ public class CW_1 {
 
         int
                 cost = 27,
-                insert = 1;
+                insert = 1,
+                n = 0;
 
         insert *= 100 - cost;
 
-        cost >= 100 ?
-                (cost == 100) ? "Сдачи нет!!!" : "Ошибка!!!"
-                : "> Сдача:\n50C - " + (insert / 50 )
-                + "\n25C - " + (insert % 50 / 25)
-                + "\n10C - " + (insert % 50 % 25 / 10 )
-                + "\n5C - " + (insert % 50 % 25 % 10 / 5 )
-                + "\n1C - " + (insert % 50 % 25 % 10 % 5 )
-
         System.out.println(
+                cost >= 100 ? (cost == 100) ? "Сдачи нет!!!" : "Ошибка!!!" : ""
         );
-
+        n = insert / 50;
+        System.out.println(
+                n != 0 ? "> Сдача:\n50C - " + n : ""
+        );
+        insert %= 50;
+        n = insert / 25;
+        System.out.println(
+                (insert / 25) != 0 ? "\n25C - " + (insert / 25) : ""
+        );
+        insert %= 25;
+        n = insert / 10;
+        System.out.println(
+                (insert / 10) != 0 ? "\n10C - " + (insert / 10) : ""
+        );
+        insert %= 10;
+        n = insert / 5;
+        System.out.println(
+                (insert / 5) != 0 ? "\n5C - " + (insert / 5) : ""
+        );
+        insert %= 5;
+        System.out.println(
+                insert != 0 ? "\n1C - " + insert : ""
+        );
     }
 }
