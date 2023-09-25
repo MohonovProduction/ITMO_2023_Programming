@@ -26,17 +26,17 @@ public class CW_1 {
         insert %= 50;
         n = insert / 25;
         System.out.println(
-                (insert / 25) != 0 ? "\n25C - " + (insert / 25) : ""
+                n != 0 ? "\n25C - " + n : ""
         );
         insert %= 25;
         n = insert / 10;
         System.out.println(
-                (insert / 10) != 0 ? "\n10C - " + (insert / 10) : ""
+                n != 0 ? "\n10C - " + n : ""
         );
         insert %= 10;
         n = insert / 5;
         System.out.println(
-                (insert / 5) != 0 ? "\n5C - " + (insert / 5) : ""
+                n != 0 ? "\n5C - " + n : ""
         );
         insert %= 5;
         System.out.println(
