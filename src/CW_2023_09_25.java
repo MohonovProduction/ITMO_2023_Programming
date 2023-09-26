@@ -34,7 +34,7 @@ public class CW_2023_09_25 {
             }
 
             if (error) {
-                System.out.printn("Дата не существует!");
+                System.out.println("Дата не существует!");
             } else {
                 days = d;
                 switch (m - 1) {
